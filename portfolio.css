@@ -2,7 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: radial-gradient(red, black);
   color: white;
   scroll-behavior: smooth;
@@ -61,13 +62,14 @@ nav ul li button {
   background-color: #222;
   border: 3px solid #222;
   border-radius: 5px;
+  font-size: 15px;
   cursor: pointer;
   color: white;
   transition: all 0.5s ease;
   font-weight: 550;
 }
 nav ul li button:hover {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid rgb(0, 255, 242);
 }
 
 nav a:hover {
@@ -94,8 +96,8 @@ nav a:hover {
 }
 
 .hero p {
-  font-size: 1.2rem;
   margin-top: 0.5rem;
+  font-size: 21px;
 }
 
 .hero button {
@@ -190,7 +192,6 @@ nav a:hover {
 
 /* Skills */
 .skills-list {
-  display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding-top: 1rem;
@@ -223,9 +224,14 @@ nav a:hover {
 }
 .skills-list li {
   background: #fff;
+  display: flex;
+  justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 0.8rem 1.2rem;
+  padding: 10px;
+  margin: 10px;
   font-weight: 600;
+  width: 150px;
+  height: auto;
   color: #222;
   list-style-type: none;
   border-radius: 8px;
