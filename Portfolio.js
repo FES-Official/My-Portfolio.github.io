@@ -20,6 +20,14 @@ if (navToggle && navLinks) {
 const year = document.querySelector(".year");
 if (year) year.textContent = new Date().getFullYear();
 
+const profilePhoto = document.querySelector("#profile-photo");
+if (profilePhoto) {
+  profilePhoto.addEventListener("click", () => {
+    const revealed = profilePhoto.classList.toggle("revealed");
+    profilePhoto.setAttribute("aria-pressed", String(revealed));
+  });
+}
+
 const revealElements = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {
