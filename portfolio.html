@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Toheed ur Rehman — Full Stack Developer portfolio showcasing frontend, backend, AWS and web development projects." />
-    <meta name="theme-color" content="#0b0f19" />
+    <meta name="theme-color" content="#100406" />
     <link rel="icon" type="image/jpeg" href="T-logo.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="portfolio.css" />
     <title>Toheed ur Rehman | Full Stack Developer</title>
   </head>
@@ -40,10 +41,12 @@
             <a class="btn btn-secondary" href="Toheed-Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
           </div>
         </div>
+
         <div class="hero-photo reveal">
-          <div class="photo-ring">
+          <button class="photo-ring" id="profile-photo" type="button" aria-label="Reveal and enlarge profile photo" aria-pressed="false">
             <img src="photo-portfolio-removebg-preview.png" alt="Portrait of Toheed ur Rehman" />
-          </div>
+          </button>
+          <p class="photo-hint">Click photo to reveal</p>
         </div>
       </section>
 
@@ -52,9 +55,7 @@
           <p class="eyebrow">ABOUT</p>
           <h2>Turning ideas into useful digital experiences.</h2>
         </div>
-        <p class="about-text">
-          I’m a passionate Full Stack Developer focused on building responsive and practical web applications. I work with modern frontend technologies, Node.js and Express on the backend, databases such as MongoDB and DynamoDB, and AWS services for cloud-based applications. I enjoy learning, solving problems and turning ideas into real projects.
-        </p>
+        <p class="about-text">I’m a passionate Full Stack Developer focused on building responsive and practical web applications. I work with modern frontend technologies, Node.js and Express on the backend, databases such as MongoDB and DynamoDB, and AWS services for cloud-based applications. I enjoy learning, solving problems and turning ideas into real projects.</p>
       </section>
 
       <section id="skills" class="section-shell section reveal">
@@ -62,7 +63,6 @@
           <p class="eyebrow">TECHNICAL SKILLS</p>
           <h2>Tools I use to build.</h2>
         </div>
-
         <div class="skill-groups">
           <div class="skill-group">
             <h3>Frontend</h3>
@@ -76,7 +76,6 @@
               <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" />Git &amp; GitHub</div>
             </div>
           </div>
-
           <div class="skill-group">
             <h3>Backend &amp; Cloud</h3>
             <div class="skills-grid">
@@ -101,42 +100,21 @@
         <div class="projects-grid">
           <article class="project-card">
             <div class="project-image"><img src="Apple-Weather-app.webp" alt="Weather app preview" /></div>
-            <div class="project-body">
-              <p class="project-type">WEB APP</p>
-              <h3>Weather App</h3>
-              <p>Responsive weather application using an API to display forecasts and useful weather information.</p>
-              <a href="https://fes-official.github.io/weather-app.github.io/" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-            </div>
+            <div class="project-body"><p class="project-type">WEB APP</p><h3>Weather App</h3><p>Responsive weather application using an API to display forecasts and useful weather information.</p><a href="https://fes-official.github.io/weather-app.github.io/" target="_blank" rel="noopener noreferrer">View Project ↗</a></div>
           </article>
-
           <article class="project-card">
             <div class="project-image"><img src="AI-vs-You.jpg" alt="AI vs You game preview" /></div>
-            <div class="project-body">
-              <p class="project-type">JAVASCRIPT GAME</p>
-              <h3>AI vs You</h3>
-              <p>An interactive challenge game built with JavaScript, featuring typing, memory and logic-based challenges.</p>
-              <a href="https://fes-official.github.io/AI-vs-You.github.io/game.html" target="_blank" rel="noopener noreferrer">Play Game ↗</a>
-            </div>
+            <div class="project-body"><p class="project-type">JAVASCRIPT GAME</p><h3>AI vs You</h3><p>An interactive challenge game built with JavaScript, featuring typing, memory and logic-based challenges.</p><a href="https://fes-official.github.io/AI-vs-You.github.io/game.html" target="_blank" rel="noopener noreferrer">Play Game ↗</a></div>
           </article>
-
           <article class="project-card">
             <div class="project-image"><img src="logo-emirates.png" alt="Emirates website clone preview" /></div>
-            <div class="project-body">
-              <p class="project-type">FRONTEND PROJECT</p>
-              <h3>Emirates Website Clone</h3>
-              <p>A frontend recreation inspired by the Emirates airline website, focused on layout and responsive design.</p>
-              <a href="https://fes-official.github.io/Emirates-Clone/Emirates.html" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-            </div>
+            <div class="project-body"><p class="project-type">FRONTEND PROJECT</p><h3>Emirates Website Clone</h3><p>A frontend recreation inspired by the Emirates airline website, focused on layout and responsive design.</p><a href="https://fes-official.github.io/Emirates-Clone/Emirates.html" target="_blank" rel="noopener noreferrer">View Project ↗</a></div>
           </article>
         </div>
       </section>
 
       <section id="contact" class="section-shell contact-section reveal">
-        <div>
-          <p class="eyebrow">CONTACT</p>
-          <h2>Let's build something together.</h2>
-          <p>Have a project, opportunity or idea? Feel free to get in touch.</p>
-        </div>
+        <div><p class="eyebrow">CONTACT</p><h2>Let's build something together.</h2><p>Have a project, opportunity or idea? Feel free to get in touch.</p></div>
         <a class="email-button" href="mailto:Urrehmantoheed97@gmail.com">Urrehmantoheed97@gmail.com</a>
       </section>
     </main>
@@ -145,9 +123,9 @@
       <div class="container footer-inner">
         <p>&copy; <span class="year"></span> Toheed ur Rehman. All rights reserved.</p>
         <div class="social-links" aria-label="Social links">
-          <a href="https://www.instagram.com/toheedurrehma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
-          <a href="https://github.com/FES-Official" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
-          <a href="https://www.linkedin.com/in/toheed-ur-rehman-43b91023a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://www.instagram.com/toheedurrehma/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://github.com/FES-Official" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/toheed-ur-rehman-43b91023a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
         </div>
       </div>
     </footer>
