@@ -88,7 +88,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .text-icon { width: 38px; height: 38px; display: grid; place-items: center; flex: 0 0 auto; border-radius: 9px; background: #3a1018; color: #ff7081; font-size: .72rem; font-weight: 900; }
 .skill-note { margin: 18px 0 0; color: var(--muted); font-size: .9rem; }
 
-.projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; margin-top: 40px; }
+.projects-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px; margin-top: 40px; }
+.zenigram-preview { position: relative; flex-direction: column; gap: 8px; background: radial-gradient(circle at 50% 30%, rgba(180, 25, 35, 0.42), transparent 42%), linear-gradient(135deg, #1a080b, #09080a 70%); }
+.zenigram-mark { width: 62px; height: 62px; display: grid; place-items: center; border: 2px solid #ff5a67; border-radius: 18px; color: #fff; font-size: 2rem; font-weight: 800; box-shadow: 0 0 30px rgba(255, 70, 85, .22); }
+.zenigram-name { color: #ff737e; font-size: .72rem; font-weight: 800; letter-spacing: .2em; }
+.project-links { display: flex; flex-wrap: wrap; gap: 16px; }
 .project-card { overflow: hidden; background: var(--surface); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--shadow); transition: transform .3s ease, border-color .3s ease; }
 .project-card:hover { transform: translateY(-7px); border-color: rgba(255,48,79,.4); }
 .project-image { height: 190px; display: grid; place-items: center; overflow: hidden; background: var(--surface-2); }
@@ -120,7 +124,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-photo { order: 1; }
   .hero-text { margin-inline: auto; }
   .button-group { justify-content: center; }
-  .skill-groups, .projects-grid { grid-template-columns: 1fr; }
+  .skill-groups, .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .project-body p:not(.project-type) { min-height: auto; }
   .contact-section { align-items: flex-start; flex-direction: column; }
 }
@@ -129,6 +133,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .container, .section-shell { width: min(100% - 28px, 1120px); }
   .nav { min-height: 68px; }
   .menu-toggle { display: block; }
+  .projects-grid { grid-template-columns: 1fr; }
   .nav-links { position: absolute; top: 68px; left: 0; right: 0; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 14px 18px; background: rgba(9,3,4,.98); border-bottom: 1px solid var(--border); }
   .nav-links.open { display: flex; }
   .nav-links a { display: block; padding: 13px 10px; }
